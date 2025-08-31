@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Offers | IronMart®</title>
+  <link rel="icon" href="Images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!--  Navbar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo-title">
+        <img src="Images/logo.png" alt="IronMart Logo" class="logo-img" />
+        <h1>IronMart<sup>®</sup></h1>
+      </a>
+      <nav class="navbar-right"> 
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>    
+        <a href="profile.html"><i class="fa fa-user"></i> Account</a>
+        <div class="dropdown">
+          <a href="javascript:void(0);" onclick="toggleDropdown()">
+            <i class="fa fa-phone"></i> Contact
+          </a>
+          <div id="contactDropdown" class="dropdown-content">
+            <a href="mailto:ironmart@gmail.com">ironmart@gmail.com</a><hr>
+            <a href="tel:+915151397983">+91 51513 97983</a>
+          </div>
+        </div>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="offers-hero">
+    <h1>🔥 Exclusive Deals Just for You!</h1>
+    <p>Save big on top-quality gym equipment – limited time only!</p>
+  </section>
+
+<section class="offers-grid">
+  <div class="offer-card">
+    <div class="offer-badge">HOT DEALS</div>
+    <img src="Images/dumbbell-offer.jpg" alt="Dumbbells Offer">
+    <div class="card-text">
+      <h2>Flat 20% OFF on Dumbbells</h2>
+      <p>Use Code: IRON20 at checkout</p>  
+    </div>   
+    <div class="offer-timer" data-end-date="2025-09-10T23:59:59">
+      Offer ends in: <span class="countdown"></span>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <div class="offer-badge new">NEW LAUNCH</div>
+    <img src="Images/home-gym-set.jpg" alt="Home Gym Set Offer">
+    <div class="card-text">
+      <h2>Combo Offer: Home Gym Set</h2>
+      <p>Buy more, Save more + Free Mat!</p>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <img src="Images/bench-press.jpg" alt="Bench Press Offer">
+    <div class="card-text">
+      <h2>Flat ₹1000 OFF on Bench Press Kits</h2>
+      <p>Use Code: BENCH1000 | Valid this week</p>
+    </div>  
+    <div class="offer-timer" data-end-date="2025-09-15T23:00:59">
+      Offer ends in: <span class="countdown"></span>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <div class="offer-badge">HOT DEALS</div>
+    <img src="Images/kettlebells.jpeg" alt="Kettlebells Discount">
+    <div class="card-text">
+      <h2>Up to 25% OFF on Kettlebells</h2>
+      <p>All sizes included | No code needed</p>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <img src="Images/yoga-mats.jpg" alt="Yoga Mats Offer">
+    <div class="card-text">
+      <h2>Free Yoga Mat with Orders ₹2999+</h2>
+      <p>Applicable on all accessories</p>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <div class="offer-badge limited"> ENDS SOON</div>
+    <img src="Images/barbell-plates.jpg" alt="Barbell Plates Deal">
+    <div class="card-text">
+      <h2>Buy 2 Get 1 Free – Barbell Plates</h2>
+      <p>Save more while you shop your fitness needs.</p>
+    </div>
+    <div class="offer-timer" data-end-date="2025-08-31T23:30:59">
+      Offer ends in: <span class="countdown"></span>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <div class="offer-badge limited">ENDS SOO</div>
+    <img src="Images/gloves-discount.jpg" alt="Gym Gloves Offer">
+    <div class="card-text">
+      <h2>20% OFF on Gym Gloves</h2>
+      <p>Perfect grip & comfort | Limited Stock</p>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+    <div class="offer-card">
+      <div class="offer-badge new"> NEW LAUNCH</div>
+      <img src="Images/rower-machine.jpg" alt="Rowing Machine">
+      <div class="card-text">
+        <h2>Flat ₹1500 OFF on Rowing Machines</h2>
+        <p>Get stronger with every pull!</p>
+      </div>
+      <div class="offer-timer" data-end-date="2025-09-05T23:59:30">
+        Offer ends in: <span class="countdown"></span>
+      </div>
+        <div class="card-footer">
+          <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+        </div>
+    </div>
+
+  <div class="offer-card">
+    <img src="Images/resistance-band.jpg" alt="Resistance Band Combo">
+    <div class="card-text">
+      <h2>Resistance Band Combo – 30% OFF</h2>
+      <p>Great for home workouts!</p>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <div class="offer-card">
+    <div class="offer-badge limited"> ENDS SOON</div>
+    <img src="Images/gym-bag.jpg" alt="Gym Bag Offer">
+    <div class="card-text">
+      <h2>Free Gym Bag on Orders ₹4999+</h2>
+      <p>Stylish & Spacious | Limited Period</p>
+    </div>
+    <div class="offer-timer" data-end-date="2025-08-30T23:59:59">
+      Offer ends in: <span class="countdown"></span>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn-offer buy-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- Confirm Modal -->
+<div class="modal-overlay" id="confirmModal">
+  <div class="modal-box">
+    <h2>🛒 Confirm Your Order</h2>
+    <p>You're one step away from completing your purchase.</p>
+    <div class="modal-actions">
+      <button id="confirmYes"> Yes, Confirm</button>
+      <button id="confirmNo"> No, Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div id="orderToast" class="toast">✅ Your Order has been Confirmed!</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>IronMart<sup>®</sup></h3>
+        <p>Strength. Endurance. Delivered.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.99H7.9V12h2.5V9.8c0-2.47 1.47-3.84 3.73-3.84 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.73l-.44 2.88H13.5v6.99A10 10 0 0 0 22 12z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H21l-6.5 7.4L22 22h-6.9l-4.3-5.6L5.7 22H3.6l7-7.9L2 2h7l3.9 5.2L18.9 2zM8.7 3.7H5.2l3.6 5 1.6-1.8-1.7-2.3zM9.9 13.4l3.2 4.2h4.7l-3.8-5-1.5 1.7-2.6-3.4-1.5 1.7 1.5 2z"/></svg>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 IronMart<sup>®</sup> | Designed by Shobika Dhanapal</p>
+  </footer>
+
+  <script src="js/index.js"></script>
+  <script src="js/offers.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Creation | IronMart®</title>
+  <link rel="icon" href="Images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo-title">
+        <img src="Images/logo.png" alt="IronMart Logo" class="logo-img" />
+        <h1>IronMart<sup>®</sup></h1>
+      </a>
+      <nav class="navbar-right">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="profile.html"><i class="fa fa-user"></i> Account</a>
+        <div class="dropdown">
+          <a href="javascript:void(0);" onclick="toggleDropdown()">
+            <i class="fa fa-phone"></i> Contact
+          </a>
+          <div id="contactDropdown" class="dropdown-content">
+            <a href="mailto:ironmart@gmail.com">ironmart@gmail.com</a><hr>
+            <a href="tel:+915151397983">+91 51513 97983</a>
+          </div>
+        </div>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Register -->
+<div class="auth-page-container">
+  <div class="auth-card">
+    
+    <div class="auth-image-section">
+      <img src="Images/reg.jpg" alt="Person working out with battle ropes">
+    </div>
+
+    <div class="auth-form-section">
+      <h2>Create New Account</h2>
+      <form id="register-form">
+        <div id="form-message" style="display: none;"></div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reg-name">Full Name</label>
+            <input type="text" id="reg-name" required />
+          </div>
+          <div class="form-group">
+            <label for="reg-email">Email</label>
+            <input type="email" id="reg-email" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reg-password">Password</label>
+            <div class="password-container">
+              <input type="password" id="reg-password" required />
+              <i class="fa fa-eye toggle-password" onclick="togglePassword('reg-password', this)"></i>
+            </div>
+            <div id="password-strength"></div>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-container">
+              <input type="password" id="confirm-password" required />
+              <i class="fa fa-eye toggle-password" onclick="togglePassword('confirm-password', this)"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-contact">Contact Number</label>
+          <input type="text" id="reg-contact" maxlength="10" pattern="\d{10}" title="Enter 10-digit mobile number" required />
+        </div>
+        <div class="form-group">
+          <label for="reg-address">Address</label>
+          <input type="text" id="reg-address" required />
+        </div>
+
+        <button type="submit" class="auth-btn">Register</button>
+        <p class="link">Already have an account? <a href="login.html">Login here</a></p>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>IronMart<sup>®</sup></h3>
+        <p>Strength. Endurance. Delivered.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.99H7.9V12h2.5V9.8c0-2.47 1.47-3.84 3.73-3.84 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.73l-.44 2.88H13.5v6.99A10 10 0 0 0 22 12z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H21l-6.5 7.4L22 22h-6.9l-4.3-5.6L5.7 22H3.6l7-7.9L2 2h7l3.9 5.2L18.9 2zM8.7 3.7H5.2l3.6 5 1.6-1.8-1.7-2.3zM9.9 13.4l3.2 4.2h4.7l-3.8-5-1.5 1.7-2.6-3.4-1.5 1.7 1.5 2z"/></svg>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 IronMart<sup>®</sup> | Designed by Shobika Dhanapal</p>
+  </footer>
+
+  <button id="backToTopBtn" title="Go to top">↑</button>
+
+  <!-- JS-->
+  <script src="js/index.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

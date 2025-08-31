@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dumbbells | IronMart®</title>
+  <link rel="icon" href="Images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo-title">
+        <img src="Images/logo.png" alt="IronMart Logo" class="logo-img" />
+        <h1>IronMart<sup>®</sup></h1>
+      </a>
+      <nav class="navbar-right">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="profile.html"><i class="fa fa-user"></i> Account</a>
+        <div class="dropdown">
+          <a href="javascript:void(0);" onclick="toggleDropdown()"><i class="fa fa-phone"></i> Contact</a>
+          <div id="contactDropdown" class="dropdown-content">
+            <a href="mailto:ironmart@gmail.com">ironmart@gmail.com</a><hr>
+            <a href="tel:+915151397983">+91 51513 97983</a>
+          </div>
+        </div>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count"></span></a>
+      </nav>
+    </div>
+  </header>
+
+<!-- Dumbbells Section -->
+  <section class="products">
+    <h2>Dumbbells</h2>
+    <p>Choose from a variety of dumbbells crafted for strength, toning, and versatility at home or gym use.</p>
+
+    <div class="product-intro-video">
+      <video autoplay muted loop playsinline>
+        <source src="Images/dumbbles-intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+     <div class="product-toolbar">
+      <div class="filter-group">
+        <label>Price Range:</label>
+        <input type="number" id="price-min" placeholder="Min">
+        <span>-</span>
+        <input type="number" id="price-max" placeholder="Max">
+      </div>
+
+      <div class="sort-group">
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by">
+          <option value="default">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+
+    <h2>One Step Closer to Your Best Self</h2>
+
+    <!-- Product Cards -->
+    <div class="product-list">
+      <div class="product-card">
+        <img src="Images/hexdumbbell.jpg" alt="Hex Dumbbell">
+        <h3>Hex Dumbbells</h3>
+        <p>Price: ₹1,800</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/vinyldumbbell.jpeg" alt="Vinyl Dumbbell">
+        <h3>Vinyl Dumbbell </h3>
+        <p>Price: ₹750</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/adjustabledumbbellset.jpg" alt="Adjustable Dumbbell">
+        <h3>Adjustable Dumbbell Set </h3>
+        <p>Price: ₹2,999</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/neoprenedumbbell.jpg" alt="Neoprene Dumbbell">
+        <h3>Neoprene Dumbbell </h3>
+        <p>Price: ₹680</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_5.jpeg" alt="Rubber Hex Dumbbell Pair (5kg)">
+        <h3>Rubber Hex Pair (5kg)</h3>
+        <p>Price: ₹1,999</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_6.jpeg" alt="Cast Iron Dumbbell (10kg Single)">
+        <h3>Cast Iron Dumbbell (10kg)</h3>
+        <p>Price: ₹1,500</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_7.jpeg" alt="Color-Coded Neoprene Set">
+        <h3>Neoprene Set</h3>
+        <p>Price: ₹2,200</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_8.jpeg" alt="Quick-Lock Adjustable Dumbbells">
+        <h3>Quick-Lock Dumbbells (20kg Set)</h3>
+        <p>Price: ₹7,999</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_9.jpeg" alt="Chrome Steel Dumbbell Pair (7.5kg)">
+        <h3>Chrome Steel Pair (7.5kg)</h3>
+        <p>Price: ₹3,500</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_10.jpeg" alt="Spin-Lock Dumbbell Set">
+        <h3>Spin-Lock Set with Bar (15kg)</h3>
+        <p>Price: ₹3,200</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_11.jpeg" alt="Pro-Style Gym Dumbbells (15kg Pair)">
+        <h3>Pro-Style Gym Pair (15kg)</h3>
+        <p>Price: ₹6,800</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_12.jpeg" alt="Bowflex SelectTech 552">
+        <h3>Bowflex SelectTech 552</h3>
+        <p>Price: ₹19,999</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_13.jpeg" alt="Ladies Toning Dumbbell Set">
+        <h3>Ladies Toning Set (Pink)</h3>
+        <p>Price: ₹1,250</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_14.jpeg" alt="Polyurethane Dumbbell (20kg Single)">
+        <h3>Polyurethane Dumbbell (20kg)</h3>
+        <p>Price: ₹4,500</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_15.jpeg" alt="Dumbbell Rack (3-Tier)">
+        <h3>Dumbbell Rack (3-Tier)</h3>
+        <p>Price: ₹4,999</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dumbbell_16.jpeg" alt="PowerBlock Pro Series">
+        <h3>PowerBlock Pro Series (Adjustable)</h3>
+        <p>Price: ₹25,500</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button> 
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  </div> </section> <div class="back-link-container">
+    <a href="index.html#category" class="back-to-home-btn"> Back to Shop </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>IronMart<sup>®</sup></h3>
+        <p>Strength. Endurance. Delivered.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.99H7.9V12h2.5V9.8c0-2.47 1.47-3.84 3.73-3.84 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.73l-.44 2.88H13.5v6.99A10 10 0 0 0 22 12z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H21l-6.5 7.4L22 22h-6.9l-4.3-5.6L5.7 22H3.6l7-7.9L2 2h7l3.9 5.2L18.9 2zM8.7 3.7H5.2l3.6 5 1.6-1.8-1.7-2.3zM9.9 13.4l3.2 4.2h4.7l-3.8-5-1.5 1.7-2.6-3.4-1.5 1.7 1.5 2z"/></svg>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 IronMart<sup>®</sup> | Designed by Shobika Dhanapal</p>
+  </footer>
+
+  <button id="backToTopBtn" title="Go to top">↑</button>
+
+  <!-- JS -->
+  <script src="js/index.js"></script>
+  <script src="js/products.js"></script>
+
+</body>
+</html>

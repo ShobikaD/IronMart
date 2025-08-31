@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IronMart® | Your Fitness Store</title>
+  <link rel="icon" href="Images/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo-title">
+        <img src="Images/logo.png" alt="IronMart Logo" class="logo-img" />
+        <h1>IronMart<sup>®</sup></h1>
+      </a>
+      <nav class="navbar-right"> 
+           
+        <div class="search-container">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="searchInput" placeholder="Type Enter to Search" autocomplete="off" />
+          <div id="suggestions"></div>
+        </div>
+        
+        <a href="profile.html"><i class="fa fa-user"></i> Account</a>
+        <div class="dropdown">
+          <a href="javascript:void(0);" onclick="toggleDropdown()">
+            <i class="fa fa-phone"></i> Contact
+          </a>
+          <div id="contactDropdown" class="dropdown-content">
+            <a href="mailto:ironmart@gmail.com">ironmart@gmail.com</a><hr>
+            <a href="tel:+915151397983">+91 51513 97983</a>
+          </div>
+        </div>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Offer-->
+  <a href="offers.html" class="offer-banner-link">
+    <div class="offer-banner">
+      <p>🎉 Grand Opening Sale! Flat 30% OFF on All Equipment – Limited Time Only! 🎉</p>
+    </div>
+  </a>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to IronMart<sup>®</sup></h2>
+      <p>Premium equipment for your home and commercial gym</p>
+      <a href="#category" class="hero-button">Shop Now</a> 
+    </div>
+  </section>
+
+  <!-- Category Section -->
+  <section class="category" id="category">
+    <h2>Explore Our Top Categories</h2>
+    <div class="scroll-arrows">
+      <button class="scroll-btn left" onclick="scrollCategory(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="category-scroll-wrapper">
+        <div class="category-scroll-container" id="category-scroll">
+
+          <a href="protein.html" class="category-card">
+            <img src="Images/protein.jpg" alt="Protein Powders">
+            <span>Protein Powders</span>
+          </a>
+          <a href="yoga.html" class="category-card">
+            <img src="Images/yoga.jpg" alt="Yoga Accessories">
+            <span>Yoga Accessories</span>
+          </a>
+          <a href="dumbbells.html" class="category-card">
+            <img src="Images/dumbbells.jpg" alt="Dumbbells">
+            <span>Dumbbells</span>
+          </a>
+          <a href="ellipticals.html" class="category-card">
+            <img src="Images/ellipticals.jpg" alt="Ellipticals">
+            <span>Ellipticals</span>
+          </a>
+          <a href="treadmills.html" class="category-card">
+            <img src="Images/teadmill.jpg" alt="Treadmills">
+            <span>Treadmills</span>
+          </a>
+          <a href="home-gym.html" class="category-card">
+            <img src="Images/home.jpg" alt="Home Gyms">
+            <span>Home Gyms</span>
+          </a>
+          <a href="weights-benches.html" class="category-card">
+            <img src="Images/weight.jpg" alt="Weights & Benches">
+            <span>Weights & Benches</span>
+          </a>
+          <a href="bikes.html" class="category-card">
+            <img src="Images/bikes.jpg" alt="Bikes">
+            <span>Bikes</span>
+          </a>
+        </div>
+      </div>
+      <button class="scroll-btn right" onclick="scrollCategory(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section id="about" class="info-section about-section">
+  <div class="info-content">
+    
+    <div class="info-image">
+      <video autoplay muted loop playsinline>
+        <source src="Images/about.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="info-text">
+      <h2>About IronMart<sup>®</sup></h2>
+      <p><strong>IronMart<sup>®</sup></strong> is not just a store – it’s your ultimate destination for fitness empowerment. We make premium strength equipment accessible for everyone—athletes, beginners, and home gyms.</p>
+      <p>Our mission is to <strong>make fitness accessible</strong> and enjoyable by delivering world-class equipment right to your doorstep. When you shop with IronMart, you're choosing reliability, performance, and community.</p>
+      
+      <a href="#category" class="btn-primary about-btn">Explore Our Gear</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    
+    <div class="contact-header">
+      <h2>Connect With Our Team!</h2>
+      <p>Have a question or feedback? We'd love to hear from you.</p>
+    </div>
+
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xkgvopan" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message" required></textarea>
+      </div>
+      
+      <button type="submit">Send Message</button>
+      
+      <p id="form-status"></p>
+    </form>
+    
+  </div>
+</section>
+
+  <!-- Footer -->   
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>IronMart<sup>®</sup></h3>
+        <p>Strength. Endurance. Delivered.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.99H7.9V12h2.5V9.8c0-2.47 1.47-3.84 3.73-3.84 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.73l-.44 2.88H13.5v6.99A10 10 0 0 0 22 12z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H21l-6.5 7.4L22 22h-6.9l-4.3-5.6L5.7 22H3.6l7-7.9L2 2h7l3.9 5.2L18.9 2zM8.7 3.7H5.2l3.6 5 1.6-1.8-1.7-2.3zM9.9 13.4l3.2 4.2h4.7l-3.8-5-1.5 1.7-2.6-3.4-1.5 1.7 1.5 2z"/></svg>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 IronMart<sup>®</sup> | Designed by Shobika Dhanapal</p>
+  </footer>
+
+  <button id="backToTopBtn" title="Go to top">↑</button>
+
+<!-- JS -->
+  <script src="js/index.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+</html>

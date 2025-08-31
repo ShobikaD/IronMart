@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Protein Powders | IronMart®</title>
+  <link rel="icon" href="Images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo-title">
+        <img src="Images/logo.png" alt="IronMart Logo" class="logo-img" />
+        <h1>IronMart<sup>®</sup></h1>
+      </a>
+      <nav class="navbar-right">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="profile.html"><i class="fa fa-user"></i> Account</a>
+        <div class="dropdown">
+          <a href="javascript:void(0);" onclick="toggleDropdown()"><i class="fa fa-phone"></i> Contact</a>
+          <div id="contactDropdown" class="dropdown-content">
+            <a href="mailto:ironmart@gmail.com">ironmart@gmail.com</a><hr>
+            <a href="tel:+915151397983">+91 51513 97983</a>
+          </div>
+        </div>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Protein Section -->
+  <section class="products">
+    <h2>Protein Powders</h2>
+    <p>Fuel your muscle recovery and daily nutrition with our top-quality protein supplements.</p>
+
+    <div class="product-intro-video">
+      <video autoplay muted loop playsinline>
+        <source src="Images/protein-intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="product-toolbar">
+      <div class="filter-group">
+        <label>Price Range:</label>
+        <input type="number" id="price-min" placeholder="Min">
+        <span>-</span>
+        <input type="number" id="price-max" placeholder="Max">
+      </div>
+      <div class="sort-group">
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by">
+          <option value="default">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <h2>Ready to Build Your Strength?</h2>
+
+    <!-- Product List -->
+    <div class="product-list">
+
+      <div class="product-card">
+        <img src="Images/wheyproteinplus.jpg" alt="Whey Protein Plus" />
+        <h3>Whey Protein Plus</h3>
+        <p>Price: ₹2,499</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/plantproteinblend.jpg" alt="Plant Protein Blend" />
+        <h3>Plant Protein Blend</h3>
+        <p>Price: ₹1,899</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/isolatewheygold.jpg" alt="Isolate Whey Gold" />
+        <h3>Isolate Whey Gold</h3>
+        <p>Price: ₹3,199</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/caseinrecoveryshake.jpg" alt="Casein Recovery Shake" />
+        <h3>Casein Recovery Shake</h3>
+        <p>Price: ₹2,299</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+<div class="product-card">
+  <img src="Images/protein_5.jpeg" alt="Pro Whey Concentrate (Chocolate)">
+  <h3>Pro Whey Concentrate (1kg)</h3>
+  <p>Price: ₹1,999</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_6.jpeg" alt="Super Mass Gainer (3kg)">
+  <h3>Super Mass Gainer (3kg)</h3>
+  <p>Price: ₹3,500</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_7.jpeg" alt="ISO-Pure Zero Carb (Strawberry)">
+  <h3>ISO-Pure Zero Carb (1kg)</h3>
+  <p>Price: ₹3,899</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_8.jpeg" alt="Micellar Casein (Cookies & Cream)">
+  <h3>Micellar Casein (1kg)</h3>
+  <p>Price: ₹2,800</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_9.jpeg" alt="Gold Standard Whey (Vanilla)">
+  <h3>Gold Standard Whey (2kg)</h3>
+  <p>Price: ₹4,500</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_10.jpeg" alt="Vegan Protein (Pea & Brown Rice)">
+  <h3>Vegan Protein (1kg)</h3>
+  <p>Price: ₹2,100</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_11.jpeg" alt="Lean Whey Isolate (Unflavored)">
+  <h3>Lean Whey Isolate (500g)</h3>
+  <p>Price: ₹1,850</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_12.jpeg" alt="Hydrolyzed Whey Peptides">
+  <h3>Hydrolyzed Whey Peptides (1kg)</h3>
+  <p>Price: ₹4,200</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_13.jpeg" alt="Egg White Protein Powder">
+  <h3>Egg White Protein (1kg)</h3>
+  <p>Price: ₹2,500</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_14.jpeg" alt="Mega Gainz 5000 (2.5kg)">
+  <h3>Mega Gainz 5000 (2.5kg)</h3>
+  <p>Price: ₹2,999</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_15.jpeg" alt="Organic Plant Power Protein">
+  <h3>Organic Plant Power (500g)</h3>
+  <p>Price: ₹1,550</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/protein_16.jpeg" alt="Slow-Release Night Protein">
+  <h3>Slow-Release Night Protein (1kg)</h3>
+  <p>Price: ₹2,950</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button> 
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div> 
+      
+    </div>
+  </section>
+
+  </div> </section> <div class="back-link-container">
+    <a href="index.html#category" class="back-to-home-btn"> Back to Shop </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>IronMart<sup>®</sup></h3>
+        <p>Strength. Endurance. Delivered.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.99H7.9V12h2.5V9.8c0-2.47 1.47-3.84 3.73-3.84 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.73l-.44 2.88H13.5v6.99A10 10 0 0 0 22 12z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H21l-6.5 7.4L22 22h-6.9l-4.3-5.6L5.7 22H3.6l7-7.9L2 2h7l3.9 5.2L18.9 2zM8.7 3.7H5.2l3.6 5 1.6-1.8-1.7-2.3zM9.9 13.4l3.2 4.2h4.7l-3.8-5-1.5 1.7-2.6-3.4-1.5 1.7 1.5 2z"/></svg>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 IronMart<sup>®</sup> | Designed by Shobika Dhanapal</p>
+  </footer>
+
+  <button id="backToTopBtn" title="Go to top">↑</button>
+
+  <!-- JS -->
+  <script src="js/index.js"></script>
+  <script src="js/products.js"></script>
+
+
+</body>
+</html>

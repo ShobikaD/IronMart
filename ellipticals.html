@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ellipticals | IronMart®</title>
+  <link rel="icon" href="Images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo-title">
+        <img src="Images/logo.png" alt="IronMart Logo" class="logo-img" />
+        <h1>IronMart<sup>®</sup></h1>
+      </a>
+      <nav class="navbar-right">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="profile.html"><i class="fa fa-user"></i> Account</a>
+        <div class="dropdown">
+          <a href="javascript:void(0);" onclick="toggleDropdown()"><i class="fa fa-phone"></i> Contact</a>
+          <div id="contactDropdown" class="dropdown-content">
+            <a href="mailto:ironmart@gmail.com">ironmart@gmail.com</a><hr>
+            <a href="tel:+915151397983">+91 51513 97983</a>
+          </div>
+        </div>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Ellipticals Section -->
+  <section class="products">
+    <h2>Ellipticals</h2>
+    <p>Low-impact cardio machines to help you burn calories and boost endurance with minimal joint strain.</p>
+
+    <div class="product-intro-video">
+      <video autoplay muted loop playsinline>
+        <source src="Images/ellipticals-intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="product-toolbar">
+      <div class="filter-group">
+        <label>Price Range:</label>
+        <input type="number" id="price-min" placeholder="Min">
+        <span>-</span>
+        <input type="number" id="price-max" placeholder="Max">
+      </div>
+      <div class="sort-group">
+        <label for="sort-by">Sort By:</label>
+        <select id="sort-by">
+          <option value="default">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <h2> Your Next Fitness Essentials </h2>
+
+    <!-- Product List -->
+    <div class="product-list">
+
+      <div class="product-card">
+        <img src="Images/compactellipticalpro.jpg" alt="Compact Elliptical Pro" />
+        <h3>Compact Elliptical Pro</h3>
+        <p>Price: ₹6,999</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/dualactiontrainer.jpg" alt="Dual Action Trainer" />
+        <h3>Dual Action Trainer</h3>
+        <p>Price: ₹8,299</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/magneticcrosstrainer.jpg" alt="Magnetic Cross Trainer" />
+        <h3>Magnetic Cross Trainer</h3>
+        <p>Price: ₹9,499</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/smartfoldableelliptical.jpg" alt="Smart Foldable Elliptical" />
+        <h3>Smart Foldable Elliptical</h3>
+        <p>Price: ₹7,799</p>
+        <div class="buttons"> 
+          <button class="add-to-cart">Add to Cart</button>        
+          <button class="buy-now">Buy Now</button>
+        </div>
+      </div>
+
+<div class="product-card">
+  <img src="Images/elliptical_5.jpeg" alt="Essential Cardio Cross Trainer" />
+  <h3>Essential Cardio Trainer</h3>
+  <p>Price: ₹10,500</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_6.jpeg" alt="AeroGlide 500 Elliptical" />
+  <h3>AeroGlide 500</h3>
+  <p>Price: ₹14,999</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_7.jpeg" alt="StaminaFit Elliptical" />
+  <h3>StaminaFit Elliptical</h3>
+  <p>Price: ₹12,499</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_8.jpeg" alt="ProForm Power Stride" />
+  <h3>ProForm Power Stride</h3>
+  <p>Price: ₹22,800</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_9.jpg" alt="Compact Apartment Elliptical" />
+  <h3>Compact Apartment Model</h3>
+  <p>Price: ₹8,999</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_10.jpeg" alt="Heavy-Duty Gym Elliptical" />
+  <h3>Heavy-Duty Gym Elliptical</h3>
+  <p>Price: ₹35,500</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_11.jpeg" alt="Bluetooth Connect Trainer" />
+  <h3>Bluetooth Connect Trainer</h3>
+  <p>Price: ₹18,999</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_12.jpeg" alt="NordicTrack Fusion Trainer" />
+  <h3>NordicTrack Fusion Trainer</h3>
+  <p>Price: ₹49,999</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_13.jpeg" alt="CardioMax Pro Elliptical" />
+  <h3>CardioMax Pro</h3>
+  <p>Price: ₹28,000</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_14.jpeg" alt="Silent Magnetic Elliptical" />
+  <h3>Silent Magnetic Elliptical</h3>
+  <p>Price: ₹16,500</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_15.jpeg" alt="Hybrid Cycle-Elliptical" />
+  <h3>Hybrid Cycle-Elliptical</h3>
+  <p>Price: ₹19,999</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="Images/elliptical_16.jpeg" alt="SmartStride Interactive Elliptical" />
+  <h3>SmartStride Interactive</h3>
+  <p>Price: ₹42,000</p>
+  <div class="buttons"> 
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="buy-now">Buy Now</button>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  </div> </section> <div class="back-link-container">
+    <a href="index.html#category" class="back-to-home-btn"> Back to Shop </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>IronMart<sup>®</sup></h3>
+        <p>Strength. Endurance. Delivered.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.99H7.9V12h2.5V9.8c0-2.47 1.47-3.84 3.73-3.84 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.73l-.44 2.88H13.5v6.99A10 10 0 0 0 22 12z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H21l-6.5 7.4L22 22h-6.9l-4.3-5.6L5.7 22H3.6l7-7.9L2 2h7l3.9 5.2L18.9 2zM8.7 3.7H5.2l3.6 5 1.6-1.8-1.7-2.3zM9.9 13.4l3.2 4.2h4.7l-3.8-5-1.5 1.7-2.6-3.4-1.5 1.7 1.5 2z"/></svg>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 IronMart<sup>®</sup> | Designed by Shobika Dhanapal</p>
+  </footer>
+
+  <button id="backToTopBtn" title="Go to top">↑</button>
+
+  <!-- JS -->
+  <script src="js/index.js"></script>
+  <script src="js/products.js"></script>
+
+</body>
+</html>
