@@ -212,6 +212,25 @@ body {
   margin-bottom: 30px;
 }
 
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem; 
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
 /* CATEGORY SECTION */
 
 .category {
@@ -286,6 +305,26 @@ body {
 
 .category-scroll-container::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 600px) {
+
+  .category {
+    padding: 40px 0;
+  }
+
+  .category h2 {
+    font-size: 1.5rem; 
+    padding: 0 15px; 
+  }
+
+  .scroll-arrows .scroll-btn {
+    display: none;
+  }
+
+   .category-scroll-container {
+    padding: 10px 15px;
+  }
 }
 
 /* CARD DESIGN  */
@@ -1703,6 +1742,29 @@ body {
   .about-section .info-text h2::after {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about-section .info-image{
+    min-width: 0;
+  }
+
+  .about-section .info-text {
+    min-width: 0;
+  }
+  
+  .about-section .info-content {
+    padding: 25px 15px;
+  }
+  
+  .about-section .info-text h2 {
+    font-size: 24px;
+  }
+
+  .about-section .info-text p {
+    font-size: 15px;
   }
 }
 
