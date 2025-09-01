@@ -318,14 +318,17 @@ body {
     padding: 0 15px; 
   }
 
-  .scroll-arrows .scroll-btn {
-    display: none;
-  }
+  .scroll-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+}
 
    .category-scroll-container {
     padding: 10px 15px;
   }
 }
+
 
 /* CARD DESIGN  */
 
