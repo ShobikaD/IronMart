@@ -22,7 +22,7 @@ This project features a fully designed multi-page frontend architecture mirrorin
 
 - **Semantic HTML5:** Applied structured navigation bars, product sections, forms, and proper image attributes for standard web design conventions.
 - **Custom CSS3:** Implemented modern web design techniques including Grid layouts, Flexbox alignments, custom brand variables, hover transitions, and dark sport-themed typography.
-- **Responsive Web Design:** Fully fluid CSS configuration mapping smoothly to desktop resolutions down to targeted smartphone screens.
+- **JavaScript (ES6+):** Utilized for managing multi-page frontend routing, handling user interaction states, and controlling interactive UI components across different views.
 
 ---
 
